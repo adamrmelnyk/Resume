@@ -20,12 +20,12 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[margin, 9pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 
 \usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+% \usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
 \usepackage{hyperref}
-\setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textwidth}{5.5in} % Text width of the document
 
 \begin{document}
 
@@ -36,75 +36,67 @@
 \moveleft.5\hoffset\centerline{\large\bf Adam Melnyk} % Your name at the top
  
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
-%\moveleft.5\hoffset\centerline{1000 Fake St, \#101} % Your address
-%\moveleft.5\hoffset\centerline{Austin, Texas 78702}
-\moveleft.5\hoffset\centerline{(512) 765-3361}
-\moveleft.5\hoffset\centerline{adam@adammelnyk.ca}
-\moveleft.5\hoffset\centerline{\href{https://www.adammelnyk.ca/}{https://www.adammelnyk.ca/}}
-\moveleft.5\hoffset\centerline{\href{https://github.com/adamrmelnyk}{https://github.com/adamrmelnyk}}
+\moveleft.4\hoffset\centerline{{\bf Mobile:} (512) 765-3361 --- {\bf Email:} \href{mailto:adam@adammelnyk.ca}{adam@adammelnyk.ca}}
+\moveleft.5\hoffset\centerline{\href{https://www.adammelnyk.ca}{www.adammelnyk.ca} --- \href{https://github.com/adamrmelnyk}{{\bf GitHub:} adamrmelnyk}}
+% \moveleft.5\hoffset\centerline{\href{https://www.adammelnyk.ca/}{https://www.adammelnyk.ca/}}
+% \moveleft.5\hoffset\centerline{\href{https://github.com/adamrmelnyk}{https://github.com/adamrmelnyk}}
 
 %----------------------------------------------------------------------------------------
 
 \begin{resume}
-
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
- 
-%\section{OBJECTIVE}  
-
-%A position in the field of Software Engineering with special interests in tools, backend application development, and scalable web services 
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{EDUCATION}
-
-{\sl Bachelor of Arts}\\
-University of Alberta, Edmonton, AB, Graduated December 2014 \\
-{\bf Major:} Computing Sciences {\bf Minor:} Philosophy \\
- 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{COMPUTER \\ SKILLS} 
+\section{SKILLS}
 
-Java, Python, Ruby on Rails, Rust, Node.js, Bash, SQL\\
+Python, Java, Bash, Ruby on Rails, Rust, Node.js, SQL\\
  
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
  
 \section{EXPERIENCE}
-
-{\sl Senior Software Engineer} \hfill October 2021 - Present \\
-\href{https://web.seesaw.me/}{Seesaw}, Remote, San Francisco, CA
+{\sl Senior Cloud Engineer} \hfill May 2023 - Present \\
+\href{https://www.trellix.com/}{Trellix: Threat Detection}, Austin, TX
 \begin{itemize}
-    \item Maintaining a CSV processing pipeline and administrative interface using {\it Python} and the {\it Tornado} web server
-    \item Refactored CSV Tool processor, increasing resiliency, consistency, and test coverage resulting in the fewest bugs during any back to school seasons
-    \item Upgraded rostering system to use new API's
+    \item Improving Trellix Detection as a Service platform using {\it Python}
+\end{itemize}
+
+
+{\sl Senior Software Engineer} \hfill November 2022 - February 2023 \\
+\href{https://www.cloudtrucks.com/}{Cloudtrucks: Trucking Management}, Austin, TX
+\begin{itemize}
+    \item Improving the core onboarding flow using {\it Python} and {\it Django}
+    \item Implementing a new roles and permissions service to control access to web functionality
+    \item Integrating instant booking with freight networks
+\end{itemize}
+
+{\sl Senior Software Engineer} \hfill October 2021 - September 2022 \\
+\href{https://web.seesaw.me/}{Seesaw: Elementary Learning Platform}, Austin, TX
+\begin{itemize}
+    \item Refactored CSV processor and pipeline, increasing resiliency, consistency, and test coverage {\it resulting in the fewest bugs during any back to school season}
+    \item Automated integration testing for third party API's and eliminated deprecated integrations
+    \item Maintained administrative interface using {\it Python} and the {\it Tornado} web server
 \end{itemize}
 
 {\sl Software Engineer} \hfill October 2017 - October 2021 \\
-\href{https://www.vrbo.com/}{Vrbo / HomeAway}, Austin, TX
+\href{https://www.vrbo.com/}{Vrbo: Vacation rentals}, Austin, TX
 \begin{itemize}
-    \item Architected and modeled a new messaging, informational and error service for a greenfield project. 
+    \item Architected and modeled a new messaging, informational and error service for a greenfield project
     \item Planned and implemented a traveler selected currency checkout system
     % \item Implemented PayPal payment processing
     \item Developed Geographical Search API's and tools as a part of the Geo, Search Services Team
+    \item Decreased search time by updating an existing monolith from {\it Elasticsearch} 1.7 to 5.6
     \item Built scalable web services with {\it Java}, {\it Dropwizard}, {\it Kafka}, and {\it Elasticsearch}
     %\item Using {\it Jmeter} and {\it Taurus} for automated load testing
     %\item Building and maintaining {\it Javascript}, {\it Bash} tools and services for Geo Analytics
     %\item Building batch services with {\it Spring Batch}
-    \item Updated an existing monolith from {\it Elasticsearch} 1.7 to 5.6
 \end{itemize}
 
 
 {\sl Software Engineer } \hfill August 2016 - August 2017 \\
-\href{https://www.ownlocal.com}{OwnLocal}, Austin, TX
+\href{https://www.ownlocal.com}{OwnLocal: Automated Ad Platform}, Austin, TX
 \begin{itemize}
     \item Built pipelines and backend software with {\it Serverless framework}, with {\it AWS Lambda}, {\it Step Functions}, {\it S3}, and {\it JavaScript}
     % \item Modeled data for and designed a WYSIWYG website editor using {\it React}
@@ -113,13 +105,13 @@ Java, Python, Ruby on Rails, Rust, Node.js, Bash, SQL\\
     \item Maintained legacy systems with {\it Ruby on Rails}, {\it Docker}, {\it Rancher OS}, {\it Redis}, and {\it MySQL}
 \end{itemize}
 
-{\sl Full-Stack Web Developer} \hfill December 2014 - July 2016 \\
-\href{https://ama.ab.ca/}{Alberta Motor Association}, Edmonton, AB
-\begin{itemize} 
-    \item Developed web applications with {\it Ruby on Rails}, {\it Sinatra}, and {\it Postgres}
+% {\sl Full-Stack Web Developer} \hfill December 2014 - July 2016 \\
+% \href{https://ama.ab.ca/}{Alberta Motor Association}, Edmonton, AB
+% \begin{itemize}
+    % \item Developed web applications with {\it Ruby on Rails}, {\it Sinatra}, and {\it Postgres}
     % \item Developed microservices, web applications, and APIs with {\it Ruby on Rails}, {\it Sinatra}, and {\it Postgres}
     % \item Built banking calculators using Ember.js
-\end{itemize}
+% \end{itemize}
 
 % {\sl .Net Developer} \hfill Summer 2014 \\
 % Government of Alberta, Alberta Education, Edmonton, AB 
@@ -141,6 +133,17 @@ Java, Python, Ruby on Rails, Rust, Node.js, Bash, SQL\\
 \href{https://github.com/adamrmelnyk/scli}{\bf SCLI:} Sonos CLI tool using {\it Rust} \\
 \href{https://github.com/adamrmelnyk/oxide\_boy}{\bf Gameboy Emulator:} An emulator for the original Nintendo Gameboy using {\it Rust} \\
 \href{https://arm64.ca}{\bf Personal Blog:} Computer science and programming related topics \\
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\sl Bachelor of Arts}\\
+University of Alberta, Edmonton, AB, Graduated December 2014 \\
+{\bf Major:} Computing Sciences {\bf Minor:} Philosophy \\
 %----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
